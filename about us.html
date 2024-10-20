@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="about us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #8e8ee5;">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="http://127.0.0.1:5500/website/home.html">
+                <img src="logo1.png" alt="Website Logo" width="120" height="40"> <!-- Updated to fit rectangle -->
+            </a>
+
+            <!-- Collapse button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links and Dropdowns -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Features with Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Feature 1</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 2</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Other Buttons -->
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/fruit.html">Fruits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/vegetable.html">Vegetables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/Mbenefits.html">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/about%20us.html#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Profile Icon -->
+                <div class="account-icon ms-3">
+                    <i class="bi bi-person-circle" id="accountBtn"></i>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+                <h2>Account</h2>
+                <a href="signup.html">Sign Up</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </div>
+    </nav>
+    <div class="about-section">
+        <div class="about-content">
+            <p class="small-text">Dolore dolore voluptate aliqua ut mi</p>
+            <h1 class="about-heading">About Us</h1>
+            <p class="about-description">Our website is dedicated to providing reliable and insightful information about the nutritional benefits of a wide variety of fruits and vegetables. Whether you're looking for ways to improve your diet, discover new healthy options, or learn the nutritional content of your favorite produce, we've got you covered!</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    
+        <div class="image-section">
+            <div class="hover-container">
+                <img src="https://imgs.search.brave.com/LTtNnJn7e1N1rwim7uI9NWPDvBNMj1k8OTzYFIIq8d8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzgzLzc4LzY1/LzM2MF9GXzc4Mzc4/NjUzOV8yVUlkb0dU/VDY1UEo5b1NOdkNR/OHQ0VndjNGNNWnk5/Sy5qcGc" alt="About Image" class="about-image">
+                <div class="hover-overlay">
+                    <h2>Your Website Name</h2>
+                    <div class="hover-options">
+                        <a href="#" class="option">Share</a>
+                        <a href="#" class="option">Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="contact-info mt-3">
+                <p><i class="bi bi-telephone-fill"></i> Phone: +123-456-7890</p>
+                <p><i class="bi bi-envelope-fill"></i> Email: info@example.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Address: 123 Main Street, City, Country</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

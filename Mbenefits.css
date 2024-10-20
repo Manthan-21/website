@@ -1,0 +1,242 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8e8ee5; 
+    color: #2C3E50; /* Dark blue text for better readability */
+}
+
+/* Navbar Background Color */
+nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #8E44AD; /* Purple background for navbar */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar Links Color */
+.navbar-nav .nav-link {
+    color: #8E44AD !important; /* Purple color for text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #E74C3C !important; /* Red color for hover effect */
+    text-decoration: underline;
+}
+
+/* Navbar Button Styling */
+.navbar-toggler {
+    border: none;
+    background-color: #F39C12; /* Yellow background for the toggle button */
+}
+
+/* Navbar Button Hover Effect */
+.navbar-toggler:hover {
+    background-color: #E74C3C; /* Red background on hover */
+}
+
+/* Profile Icon */
+.account-icon i {
+    color: #000000; /* Black color for the profile icon */
+}
+
+/* Search Bar Button */
+.form-control, .btn-outline-success {
+    border-radius: 50px; /* Rounded buttons */
+}
+
+.form-control {
+    width: 250px;
+    background-color: #fff; /* White background for search bar */
+}
+
+.btn-outline-success {
+    background-color: #8E44AD; /* Purple color for the search button */
+    border-color: #8E44AD;
+    color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #E74C3C; /* Red color on hover */
+    border-color: #E74C3C;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Move it to the right */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #F39C12; /* Yellow color on hover */
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Body shift when sidebar opens */
+body.open {
+    margin-right: 250px;
+}
+
+/* Fruits Heading - Unique Styling */
+.fruits-heading {
+    margin-left: 20px;
+    margin-top: 20px; /* Adjusting margin-top for the perfect position */
+    
+    font-size: 3.5rem; /* Making the font larger for prominence */
+    font-weight: 600;
+    color: #ffa600; 
+    text-transform: uppercase; /* Making the heading uppercase */
+    letter-spacing: 5px; /* Adding space between letters */
+    text-align: center; /* Align the text to the left */
+    padding-bottom: 2px; /* Adding some space at the bottom */
+    border-bottom: 4px solid #000000 ; /* A thicker red border for the underline */
+    font-family: 'Courier New', Courier, monospace; /* Clean, modern font */
+    background: linear-gradient(90deg, rgb(255 255 255) 0%, rgb(255 24 0) 100%); /* Gradient background for the text */
+    -webkit-background-clip: text; /* Ensures the gradient is applied to the text */
+    color: transparent; /* Make the text transparent to show the gradient */
+    transition: all 0.4s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Heading */
+.fruits-heading:hover {
+    color: #ffa600; /* Purple color when hovered */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow when hovered */
+    transform: translateY(-5px); /* Slight upward motion for hover effect */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .fruits-heading {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        margin-left: 10px; /* Adjust left margin for smaller screens */
+        margin-top: 80px; /* Reduce margin-top for smaller screens */
+    }
+}
+
+/* Fruits Section */
+.fruit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0; /* Margin around the container */
+}
+
+/* Individual Fruit Item */
+.fruit-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; /* Minimal space between image and content */
+    max-width: 900px; /* Limit the width of the fruit item */
+    max-height:700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fruit Image */
+.fruit-image img {
+    max-width: 200px; /* Set maximum image size */
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Fruit Description */
+.fruit-description {
+    max-width: 500px; /* Limit description width */
+    color: #333; /* Dark text for better readability */
+}
+
+/* Fruit Description Title */
+.fruit-description h2 {
+    font-size: 2rem;
+    color: #8E44AD; /* Purple color for the title */
+    font-weight: bold;
+}
+
+/* Fruit Description Text */
+.fruit-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fruit-item {
+        flex-direction: column;
+        text-align: center; /* Center the text when stacked vertically */
+    }
+
+    .fruit-image img {
+        max-width: 80%; /* Adjust image width on smaller screens */
+    }
+
+    .fruit-description {
+        max-width: 100%; /* Let the description take full width on smaller screens */
+    }
+}
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Matching purple background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #F39C12; /* Yellow on hover */
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer .contact-info i {
+    margin-right: 5px;
+}
+
+/* Footer Icon Hover Effect */
+.footer a:hover {
+    color: #E74C3C; /* Red on hover */
+}

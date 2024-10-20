@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Page</title>
+    <link rel="stylesheet" href="Mbenefits.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #8e8ee5;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="http://127.0.0.1:5500/website/home.html">
+                <img src="logo1.png" alt="Website Logo" width="120" height="40"> <!-- Updated to fit rectangle -->
+            </a>
+
+            <!-- Collapse button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links and Dropdowns -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Features with Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Feature 1</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 2</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Other Buttons -->
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/fruit.html">Fruits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/vegetable.html">Vegetables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/Mbenefits.html">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/website/about%20us.html#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Profile Icon -->
+                <div class="account-icon ms-3">
+                    <i class="bi bi-person-circle" id="accountBtn"></i>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+                <h2>Account</h2>
+                <a href="signup.html">Sign Up</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fruits Heading -->
+    <div class="fruits-heading">
+        <h1>BENEFITS</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Fruits Section -->
+    <div class="fruit-container">
+        <div class="fruit-item">
+            <div class="fruit-image">
+                <img src="https://imgs.search.brave.com/QC42KnJNsG3huttnNwFK-ApuNTRwscUFzXVRMcfQZw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NTQyNTkxNC9waG90/by93b21hbi13aXRo/LWZyZXNobHktcGlj/a2VkLWFwcGxlcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eHJDMEROODA4NG5v/NXI4NGFqVTcxaG56/ZjMySmVBX29Iem9n/VWVTMzhmcz0" alt="Apple">
+            </div>
+            <div class="fruit-description">
+                <h2>Apple</h2>
+                <p>Apples are high in fiber and vitamin C. They may also help with weight loss and improve gut health.
+                </p>
+            </div>
+        </div>
+        <!-- Add more fruits here in similar structure -->
+        <div class="fruit-item">
+            <div class="fruit-image">
+                <img src="https://imgs.search.brave.com/QC42KnJNsG3huttnNwFK-ApuNTRwscUFzXVRMcfQZw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NTQyNTkxNC9waG90/by93b21hbi13aXRo/LWZyZXNobHktcGlj/a2VkLWFwcGxlcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eHJDMEROODA4NG5v/NXI4NGFqVTcxaG56/ZjMySmVBX29Iem9n/VWVTMzhmcz0" alt="Apple">
+            </div>
+            <div class="fruit-description">
+                <h2>Apple</h2>
+                <p>Apples are high in fiber and vitamin C. They may also help with weight loss and improve gut health.
+                </p>
+            </div>
+        </div>
+        <div class="fruit-item">
+            <div class="fruit-image">
+                <img src="https://imgs.search.brave.com/QC42KnJNsG3huttnNwFK-ApuNTRwscUFzXVRMcfQZw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NTQyNTkxNC9waG90/by93b21hbi13aXRo/LWZyZXNobHktcGlj/a2VkLWFwcGxlcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eHJDMEROODA4NG5v/NXI4NGFqVTcxaG56/ZjMySmVBX29Iem9n/VWVTMzhmcz0" alt="Apple">
+            </div>
+            <div class="fruit-description">
+                <h2>Apple</h2>
+                <p>Apples are high in fiber and vitamin C. They may also help with weight loss and improve gut health.
+                </p>
+            </div>
+        </div>
+        <div class="fruit-item">
+            <div class="fruit-image">
+                <img src="https://imgs.search.brave.com/QC42KnJNsG3huttnNwFK-ApuNTRwscUFzXVRMcfQZw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NTQyNTkxNC9waG90/by93b21hbi13aXRo/LWZyZXNobHktcGlj/a2VkLWFwcGxlcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eHJDMEROODA4NG5v/NXI4NGFqVTcxaG56/ZjMySmVBX29Iem9n/VWVTMzhmcz0" alt="Apple">
+            </div>
+            <div class="fruit-description">
+                <h2>Apple</h2>
+                <p>Apples are high in fiber and vitamin C. They may also help with weight loss and improve gut health.
+                </p>
+            </div>
+        </div>
+        <div class="fruit-item">
+            <div class="fruit-image">
+                <img src="https://imgs.search.brave.com/QC42KnJNsG3huttnNwFK-ApuNTRwscUFzXVRMcfQZw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NTQyNTkxNC9waG90/by93b21hbi13aXRo/LWZyZXNobHktcGlj/a2VkLWFwcGxlcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/eHJDMEROODA4NG5v/NXI4NGFqVTcxaG56/ZjMySmVBX29Iem9n/VWVTMzhmcz0" alt="Apple">
+            </div>
+            <div class="fruit-description">
+                <h2>Apple</h2>
+                <p>Apples are high in fiber and vitamin C. They may also help with weight loss and improve gut health.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="contact-info mt-3">
+                <p><i class="bi bi-telephone-fill"></i> Phone: +123-456-7890</p>
+                <p><i class="bi bi-envelope-fill"></i> Email: info@example.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Address: 123 Main Street, City, Country</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fruits-section {
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section on the page */
+}
+
+.fruit {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: flex-start; /* Align items at the start */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding for smaller containers */
+    margin: 10px 0; /* Vertical margin for spacing */
+    max-width: 550px; /* Set a maximum width for the container */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-left: auto; /* Center the fruit container */
+    margin-right: auto; /* Center the fruit container */
+}
+
+.fruit img {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px; /* Reduced spacing between image and text */
+}
+
+.fruit-info {
+    flex: 1; /* Allow the fruit-info to take the remaining space */
+}
+
+ul {
+    margin: 0; /* Remove default margin for the list */
+    padding-left: 20px; /* Indent the list */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}

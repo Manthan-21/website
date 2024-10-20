@@ -1,0 +1,321 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; /* Light grey background for the body */
+    color: #2C3E50; /* Dark blue text for better readability */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Background Color */
+nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #8E44AD; /* Purple background for navbar */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar Links Color */
+.navbar-nav .nav-link {
+    color: #8E44AD !important; /* White color for text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #E74C3C !important; /* Red color for hover effect */
+    text-decoration: underline;
+}
+
+/* Navbar Button Styling */
+.navbar-toggler {
+    border: none;
+    background-color: #F39C12; /* Yellow background for the toggle button */
+}
+
+/* Navbar Button Hover Effect */
+.navbar-toggler:hover {
+    background-color: #E74C3C; /* Red background on hover */
+}
+
+/* Profile Icon */
+.account-icon i {
+    color: #000000; /* White color for the profile icon */
+}
+
+/* Search Bar Button */
+.form-control, .btn-outline-success {
+    border-radius: 50px; /* Rounded buttons */
+}
+
+.form-control {
+    width: 250px;
+    background-color: #fff; /* White background for search bar */
+}
+
+.btn-outline-success {
+    background-color: #8E44AD; /* Purple color for the search button */
+    border-color: #8E44AD;
+    color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #E74C3C; /* Red color on hover */
+    border-color: #E74C3C;
+}
+
+/* Sidebar Menu Link Colors */
+.sidebar a {
+    color: #F8F9FA; /* White color for sidebar links */
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #E74C3C; /* Red color on hover */
+}
+
+/* Add background color for navbar on hover */
+nav:hover {
+    background-color: #3498DB; /* Lighter blue-green on hover effect */
+}
+
+/* Align the content properly */
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-brand img {
+    border-radius: 0; /* Remove circle for rectangular logo */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.form-control {
+    width: 250px;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Move it to the right */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #F39C12; /* Yellow color on hover */
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Body shift when sidebar opens */
+body.open {
+    margin-right: 250px;
+}
+
+/* Style for Home Page Content */
+.home-content {
+    text-align: center;
+    padding: 50px;
+    background-color: #F8F9FA;
+    color: #2C3E50; /* Dark blue text */
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8E44AD; /* Purple color for heading */
+}
+
+.home-content{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    margin-top: -20px;
+    z-index: 1;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Matching purple background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #F39C12; /* Yellow on hover */
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer .contact-info i {
+    margin-right: 5px;
+}
+
+/* Footer Icon Hover Effect */
+.footer a:hover {
+    color: #E74C3C; /* Red on hover */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8e8ee5;
+    
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 75px;
+}
+
+.about-content {
+    flex-basis: 50%;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.about-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.image-section {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.hover-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.hover-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hover-options {
+    display: flex;
+    gap: 20px;
+}
+
+.option {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: white;
+    color: black;
+}

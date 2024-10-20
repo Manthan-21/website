@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling for the account icon */
+.account-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Sidebar container */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 100;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button on the sidebar */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Sidebar open animation */
+.sidebar.open {
+    width: 250px;
+}
+
+/* Body content shifts when sidebar opens */
+body.open {
+    transition: margin-left 0.5s;
+    margin-left: 250px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Person Icon that triggers the menu -->
+    <div class="account-icon">
+        <i class="bi bi-person-circle" id="accountBtn"></i>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <h2>Account</h2>
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

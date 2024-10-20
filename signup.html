@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="sign up.css"> <!-- Link to external CSS file -->
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Part -->
+    <div class="left-part">
+        <img src="upper sign up image.jpg" alt="Image" class="img-fluid">
+        <p>Your engaging text goes here. Capture the essence of your website!</p>
+    </div>
+
+    <!-- Right Part -->
+    <div class="right-part">
+        <h2 class="text-center">Create an Account</h2>
+        <div class="text-center social-buttons">
+            <button class="btn btn-danger"><i class="fab fa-google"></i></button>
+            <button class="btn btn-primary"><i class="fab fa-facebook-f"></i></button>
+            <button class="btn btn-info"><i class="fab fa-twitter"></i></button>
+        </div>
+        <form id="signUpForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                    <span id="firstNameError" class="error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                    <span id="lastNameError" class="error"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span id="genderError" class="error"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+                    <span id="ageError" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="createPassword">Create Password</label>
+                <input type="password" class="form-control" id="createPassword" placeholder="Create password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+            <button type="submit" class="btn signup-button btn-block">Sign Up</button>
+        </form>
+        <p class="text-center mt-3">Already have an account? <a href="#" class="login-link">Log In</a></p>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.getElementById("signUpForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let valid = true;
+
+        // First name validation
+        const firstName = document.getElementById("firstName").value;
+        const firstNameError = document.getElementById("firstNameError");
+        if (firstName.trim() === "") {
+            firstNameError.textContent = "First name is required";
+            valid = false;
+        } else {
+            firstNameError.textContent = "";
+        }
+
+        // Last name validation
+        const lastName = document.getElementById("lastName").value;
+        const lastNameError = document.getElementById("lastNameError");
+        if (lastName.trim() === "") {
+            lastNameError.textContent = "Last name is required";
+            valid = false;
+        } else {
+            lastNameError.textContent = "";
+        }
+
+        // Gender validation
+        const gender = document.getElementById("gender").value;
+        const genderError = document.getElementById("genderError");
+        if (gender === "") {
+            genderError.textContent = "Gender is required";
+            valid = false;
+        } else {
+            genderError.textContent = "";
+        }
+
+        // Age validation
+        const age = document.getElementById("age").value;
+        const ageError = document.getElementById("ageError");
+        if (age === "" || age < 1 || age > 120) {
+            ageError.textContent = "Please enter a valid age between 1 and 120";
+            valid = false;
+        } else {
+            ageError.textContent = "";
+        }
+
+        // Email validation
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            emailError.textContent = "Please enter a valid email address";
+            valid = false;
+        } else {
+            emailError.textContent = "";
+        }
+
+        // Password validation
+        const password = document.getElementById("createPassword").value;
+        const passwordError = document.getElementById("passwordError");
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/;
+        if (!passwordRegex.test(password)) {
+            passwordError.textContent = "Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters";
+            valid = false;
+        } else {
+            passwordError.textContent = "";
+        }
+
+        // Confirm password validation
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        const confirmPasswordError = document.getElementById("confirmPasswordError");
+        if (confirmPassword !== password) {
+            confirmPasswordError.textContent = "Passwords do not match";
+            valid = false;
+        } else {
+            confirmPasswordError.textContent = "";
+        }
+
+        // If all fields are valid, allow form submission
+        if (valid) {
+            alert("Form submitted successfully!");
+            // You can add code here to actually submit the form data to the server.
+        }
+    });
+</script>
+
+</body>
+</html>
